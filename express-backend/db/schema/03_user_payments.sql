@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS info CASCADE;
+
+CREATE TABLE user_addresses(
+  id SERIAL PRIMARY KEY NOT NULL,
+  user_id INT NOT NULL
+);

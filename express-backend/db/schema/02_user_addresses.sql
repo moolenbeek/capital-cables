@@ -2,7 +2,7 @@ DROP TABLE IF EXISTS info CASCADE;
 
 CREATE TABLE user_addresses(
   id SERIAL PRIMARY KEY NOT NULL,
-  user_id INT NOT NULL,
+  user_id INTEGER REFERENCES users(id),
   address_line1 VARCHAR(255) NOT NULL,
   address_line2 VARCHAR(255) NOT NULL,
   city VARCHAR(255) NOT NULL,

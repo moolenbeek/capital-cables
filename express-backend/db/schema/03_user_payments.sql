@@ -1,6 +1,6 @@
-DROP TABLE IF EXISTS info CASCADE;
+DROP TABLE IF EXISTS user_payments CASCADE;
 
-CREATE TABLE user_addresses(
+CREATE TABLE user_payments(
   id SERIAL PRIMARY KEY NOT NULL,
   user_id INTEGER REFERENCES users(id)
 );

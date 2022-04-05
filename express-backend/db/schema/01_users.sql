@@ -1,6 +1,6 @@
 -- create table with the one side of the relationship first
 
-DROP TABLE IF EXISTS info CASCADE;
+DROP TABLE IF EXISTS users CASCADE;
 
 CREATE TABLE users(
   id SERIAL PRIMARY KEY NOT NULL,

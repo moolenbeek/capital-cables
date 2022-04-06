@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS discounts CASCADE;
+
+CREATE TABLE discounts(
+  id SERIAL PRIMARY KEY NOT NULL,
+  name VARCHAR(255) NOT NULL,
+  description VARCHAR(255) NOT NULL,
+  discount_percent VARCHAR(255) NOT NULL,
+  active VARCHAR(255) NOT NULL
+);

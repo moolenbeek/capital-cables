@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS payment_details CASCADE;
+
+CREATE TABLE payment_details(
+  id SERIAL PRIMARY KEY NOT NULL,
+  amount VARCHAR(255) NOT NULL,
+  provider VARCHAR(255) NOT NULL,
+  status VARCHAR(255) NOT NULL
+);

@@ -1,8 +1,8 @@
-DROP TABLE IF EXISTS user_addresses CASCADE;
+DROP TABLE IF EXISTS user_address CASCADE;
 
-CREATE TABLE user_addresses(
+CREATE TABLE user_address(
   id SERIAL PRIMARY KEY NOT NULL,
-  user_id INTEGER REFERENCES users(id),
+  user_id INTEGER REFERENCES "user"(id),
   address_line1 VARCHAR(255) NOT NULL,
   address_line2 VARCHAR(255) NOT NULL,
   city VARCHAR(255) NOT NULL,

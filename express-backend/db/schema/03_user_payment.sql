@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS user_payment CASCADE;
+
+CREATE TABLE user_payment(
+  id SERIAL PRIMARY KEY NOT NULL,
+  user_id INTEGER REFERENCES "user"(id)
+);
